@@ -1194,6 +1194,16 @@ footer {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
+    .market-content, .experience-layout {
+        grid-template-columns: 1fr !important;
+        gap: 3.5rem !important;
+    }
+    .experience-images {
+        order: 2;
+    }
+    .experience-text {
+        order: 1;
+    }
 }
 
 @media (max-width: 1024px) {
