@@ -359,7 +359,7 @@ nav a:hover::after, nav a.active::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(3, 3, 3, 0.82), rgba(3, 3, 3, 0.95)), url('assets/hero_bar_interior.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(3, 3, 3, 0.65), rgba(3, 3, 3, 0.85)), url('assets/social_people.png') no-repeat center center/cover;
     text-align: center;
     padding-top: 90px;
 }
