@@ -952,9 +952,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 .result-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.8rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1.4rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
@@ -963,15 +964,18 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .result-label {
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: var(--text-dark);
+    word-break: keep-all;
+    line-height: 1.4;
 }
 
 .result-val {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: 700;
     font-family: var(--font-serif);
     color: var(--text-primary);
+    white-space: nowrap;
 }
 
 .result-val.highlight-gold {
@@ -1186,10 +1190,14 @@ footer {
         padding: 0.5rem 1.2rem;
         font-size: 0.75rem;
     }
+    .calc-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
 }
 
 @media (max-width: 1024px) {
-    .brand-grid, .market-content, .experience-layout, .calc-grid, .inquiry-grid {
+    .brand-grid, .market-content, .experience-layout, .inquiry-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
@@ -1289,16 +1297,13 @@ footer {
         align-items: flex-start;
     }
     .result-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
         padding: 1.2rem 0;
     }
     .result-val {
         font-size: 1.5rem;
     }
     .result-val.highlight-gold {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 }
 
@@ -1312,5 +1317,11 @@ footer {
     .mockup-tab-btn {
         padding: 0.6rem 1rem;
         font-size: 0.8rem;
+    }
+    .result-val {
+        font-size: 1.35rem;
+    }
+    .result-val.highlight-gold {
+        font-size: 1.7rem;
     }
 }
